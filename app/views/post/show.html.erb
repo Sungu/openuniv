@@ -1,0 +1,45 @@
+<div class="jumbotron">
+  <img src="<%= @post.img %>" class="" width="100%">
+  <h1><%= @post.title %></h1>
+  <p class="lead"><%= @post.content %></p>
+  <p id="count">4.2 점 (250 명)</p>
+  <form>
+    <span class="star-rating">
+      <input type="radio" name="rating" value="1"><i></i>
+      <input type="radio" name="rating" value="2"><i></i>
+      <input type="radio" name="rating" value="3"><i></i>
+      <input type="radio" name="rating" value="4"><i></i>
+      <input type="radio" name="rating" value="5"><i></i>
+    </span>
+    <br>
+    <input type="text" class="form-control" name="msg" placeholder="별점 체크 후 평가를 남겨주세요">
+    <br>
+    <button class="btn btn-success" href="#" role="button">평가하기</button>
+  </form>
+</div>
+
+<div class="col-lg-12">
+    <!-- 각 코멘트들 -->
+    <div class="well">
+      <span class="star-rating small">
+        <i></i>
+        <i></i>
+        <i class="on"></i>
+        <i></i>
+        <i></i>
+      </span>
+      <p>User1 : Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+    </div>
+    <!-- 각 코멘트 끝 -->
+    <div class="well">
+      <span class="star-rating small">
+        <i></i>
+        <i></i>
+        <i class="on"></i>
+        <i></i>
+        <i></i>
+      </span>
+      <p>User2 : Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+    </div>
+  </div>
+</div>
